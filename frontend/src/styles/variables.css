@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  /* Fonts */
+  --font-main: 'Plus Jakarta Sans', sans-serif;
+
+  /* Color Palette - HSL Tailored Modern Slate & Indigo */
+  --color-primary-hsl: 250, 84%, 54%;
+  --color-primary: hsl(var(--color-primary-hsl));
+  --color-primary-light: hsl(250, 84%, 65%);
+  --color-primary-dark: hsl(250, 84%, 40%);
+  --color-primary-glow: hsla(250, 84%, 54%, 0.15);
+
+  --color-secondary-hsl: 278, 92%, 52%;
+  --color-secondary: hsl(var(--color-secondary-hsl));
+  --color-secondary-light: hsl(278, 92%, 65%);
+
+  --color-dark: hsl(222, 47%, 11%);
+  --color-dark-surface: hsl(222, 47%, 15%);
+  --color-dark-border: hsl(222, 30%, 22%);
+
+  --color-light-bg: hsl(210, 40%, 98%);
+  --color-light-surface: hsl(0, 0%, 100%);
+  --color-light-border: hsl(214, 32%, 91%);
+  
+  --color-text-primary: hsl(222, 47%, 15%);
+  --color-text-secondary: hsl(215, 16%, 47%);
+  --color-text-muted: hsl(215, 16%, 65%);
+
+  --color-success: hsl(142, 72%, 29%);
+  --color-success-light: hsl(142, 72%, 95%);
+  --color-warning: hsl(38, 92%, 50%);
+  --color-warning-light: hsl(38, 92%, 95%);
+  --color-danger: hsl(350, 89%, 60%);
+  --color-danger-light: hsl(350, 89%, 95%);
+
+  /* UI Tokens */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.1);
+  --shadow-glow: 0 0 20px hsla(250, 84%, 54%, 0.3);
+
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s ease;
+  --transition-slow: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.4);
+  --glass-blur: blur(12px);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-light-bg: hsl(222, 47%, 9%);
+    --color-light-surface: hsl(222, 47%, 12%);
+    --color-light-border: hsl(222, 30%, 18%);
+
+    --color-text-primary: hsl(210, 40%, 98%);
+    --color-text-secondary: hsl(215, 16%, 70%);
+    --color-text-muted: hsl(215, 16%, 50%);
+
+    --glass-bg: rgba(15, 23, 42, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.06);
+  }
+}
